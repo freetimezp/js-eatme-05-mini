@@ -8,6 +8,8 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #000;
+  background: url(../images/plane.png) no-repeat;
+  background-color: #f7efed;
 }
 
 a {
@@ -16,8 +18,11 @@ a {
 
 .wrapper {
   width: 75%;
+  min-height: 100vh;
   margin: auto;
   display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
 }
 .wrapper nav {
   width: 100%;
@@ -94,4 +99,129 @@ a {
   margin-left: 0.5rem;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+}
+.wrapper .article {
+  display: flex;
+}
+.wrapper .article .flavor-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  gap: 1.3rem;
+}
+.wrapper .article .flavor-data .flavor-name {
+  font-weight: bold;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+.wrapper .article .flavor-data .flavor-desc {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper .add-to-cart {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  gap: 1rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 0.3rem 1.2rem 0.3rem 0.3rem;
+  cursor: pointer;
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper .add-to-cart div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 209, 84);
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50px;
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper .add-to-cart div img {
+  height: 50%;
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper .qty-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper .qty-wrapper .qty {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  outline: none;
+  border: 2px solid rgb(255, 209, 84);
+  text-align: center;
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper .qty-wrapper .plus,
+.wrapper .article .flavor-data .add-to-cart-wrapper .qty-wrapper .minus {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper .qty-wrapper .plus:hover,
+.wrapper .article .flavor-data .add-to-cart-wrapper .qty-wrapper .minus:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+.wrapper .article .flavor-data .add-to-cart-wrapper .qty-wrapper .plus:active,
+.wrapper .article .flavor-data .add-to-cart-wrapper .qty-wrapper .minus:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.wrapper .article .pack {
+  width: 60%;
+  display: flex;
+}
+.wrapper .article .pack .pack-img {
+  height: 30rem;
+  transform: rotate(-15deg);
+  filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.7));
+}
+.wrapper .article .pack .bubbles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.7rem;
+}
+.wrapper .article .pack .bubbles .bubble {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+.wrapper .article .pack .bubbles .bubble span {
+  font-weight: bold;
+}
+.wrapper .article .pack .bubbles .bubble:nth-child(1) div {
+  background-color: #206456;
+}
+.wrapper .article .pack .bubbles .bubble:nth-child(2) div {
+  background-color: #d51037;
+}
+.wrapper .article .pack .bubbles .bubble:nth-child(3) div {
+  background-color: #fdb339;
+}
+.wrapper .article .pack .bubbles .bubble div {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.wrapper .article .pack .bubbles .bubble div img {
+  height: 50%;
 }/*# sourceMappingURL=style.css.map */
