@@ -190,7 +190,6 @@ a {
 }
 .wrapper .article .pack .pack-img {
   height: 30rem;
-  transform: rotate(-15deg);
   filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.7));
 }
 .wrapper .article .pack .bubbles {

@@ -28,8 +28,8 @@
 
         <div class="article">
             <div class="flavor-data">
-                <span class="flavor-name">Nacho Cheese</span>
-                <span class="flavor-desc">
+                <span class="flavor-name" id="flavor-name">Nacho Cheese</span>
+                <span class="flavor-desc" id="flavor-desc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit tenetur perferendis.
                 </span>
 
@@ -49,7 +49,8 @@
             </div>
 
             <div class="pack">
-                <img src="./assets/images/nacho_cheese.webp" alt="product" class="pack-img">
+                <img src="./assets/images/nacho_cheese.webp" alt="product" class="pack-img" id="pack-img"
+                    style="transform: rotate(-15deg)">
 
                 <div class="bubbles">
                     <div class="bubble">
@@ -75,7 +76,7 @@
         </div>
 
         <footer class="footer">
-            <div class="item-footer">
+            <div class="item-footer" id="nacho-cheese">
                 <div>
                     <img src="./assets/images/nacho_cheese.webp" alt="Nacho">
 
@@ -86,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item-footer">
+            <div class="item-footer" id="cool-ranch">
                 <div>
                     <img src="./assets/images/cool_ranch.webp" alt="Cool ranch">
 
@@ -97,12 +98,12 @@
                     </div>
                 </div>
             </div>
-            <div class="item-footer">
+            <div class="item-footer" id="sweet-chilli">
                 <div>
-                    <img src="./assets/images/spicy_sweet_chili.webp" alt="Spicy Chili">
+                    <img src="./assets/images/spicy_sweet_chilli.webp" alt="Spicy Chilli">
 
                     <div class="item-footer-info">
-                        <span>Spicy Chili</span>
+                        <span>Sweet Chilli</span>
                         <span>$ 1.00</span>
                         <span>Order Now</span>
                     </div>
@@ -110,6 +111,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="./assets/js/anime.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
