@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 75%;
+  margin: auto;
+  display: flex;
+}
+.wrapper nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  margin-top: 2vh;
+}
+.wrapper nav img {
+  width: 10rem;
+}
+.wrapper nav .links {
+  display: flex;
+  gap: 1rem;
+}
+.wrapper nav .links a {
+  text-transform: uppercase;
+  font-weight: 700;
+  background: -webkit-linear-gradient(45deg, red, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.wrapper nav .links a:hover {
+  background: -webkit-linear-gradient(90deg, lightgreen, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrapper nav .search-box {
+  background: rgb(219, 59, 59);
+  background: linear-gradient(124deg, rgb(219, 59, 59) 7%, rgb(134, 1, 1) 78%);
+  padding: 2rem;
+  border-radius: 85% 15% 85% 15%/43% 51% 49% 57%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 7px rgb(134, 1, 1);
+}
+.wrapper nav .search-box::before {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-45%);
+  content: url(../../assets/images/search.png);
+}
+.wrapper nav .search-box:hover img {
+  transform: scale(1.1);
+}
+.wrapper nav .search-box input {
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  border: none;
+  padding: 0 0.5rem 0 2rem;
+  font-size: 1.1rem;
+  width: 80%;
+}
+.wrapper nav .search-box input::-moz-placeholder {
+  color: #fff;
+}
+.wrapper nav .search-box input::placeholder {
+  color: #fff;
+}
+.wrapper nav .search-box input::-webkit-search-cancel-button {
+  font-size: 20px;
+}
+.wrapper nav .search-box span {
+  border-right: 1px solid #fff;
+}
+.wrapper nav .search-box img {
+  width: 30px;
+  height: 30px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
