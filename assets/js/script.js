@@ -40,6 +40,7 @@ const animation1 = anime.timeline({
 animation1.add({
     targets: "#pack-img",
     translateX: -1500,
+    scale: 0,
     rotate: "2deg",
     changeComplete: function (anim) {
         document.querySelector("#pack-img").src = "./assets/images/" + currentImg;
@@ -47,6 +48,7 @@ animation1.add({
 }).add({
     targets: "#pack-img",
     translateX: 0,
+    scale: 1,
     rotate: "-15deg",
 });
 
